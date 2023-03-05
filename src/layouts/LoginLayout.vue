@@ -3,7 +3,7 @@
     <q-header class="login-layout__header">
       <q-toolbar class="lt-md">
         <q-space />
-        <q-img src="/logo-mobile.svg" width="25px" />
+        <q-img src="~assets/logo-mobile.svg" width="25px" />
       </q-toolbar>
       <div class="login-layout__header-content lt-md">
         <div class="q-mb-xs text-h4 text-weight-bolder">Aspire</div>
