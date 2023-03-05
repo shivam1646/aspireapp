@@ -1,6 +1,6 @@
 <template>
   <q-drawer :model-value="true" :width="340" class="app-drawer q-pa-xl">
-    <q-img src="src/assets/aspire_logo.svg" width="125px"></q-img>
+    <q-img src="~assets/aspire_logo.svg" width="125px"></q-img>
     <div class="headline q-mt-sm">
       Trusted way of banking for 3,000+ SMEs and startups in Singapore
     </div>
@@ -16,7 +16,7 @@
         <div class="text-white q-ml-sm">{{ item.text }}</div>
       </q-item>
       <q-item class="q-my-lg no-padding" clickable @click="logout">
-        <q-img src="src/assets/account.svg" width="24px" height="24px"></q-img>
+        <q-img src="~assets/account.svg" width="24px" height="24px"></q-img>
         <div class="text-white q-ml-sm">Logout</div>
       </q-item>
     </q-list>

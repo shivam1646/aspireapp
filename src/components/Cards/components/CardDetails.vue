@@ -1,13 +1,11 @@
 <template>
   <q-card class="card-details" flat>
     <div class="row flex-center q-pa-lg">
-      <q-img src="src/assets/carddetails.svg" width="24px"></q-img>
+      <q-img src="~assets/carddetails.svg" width="24px"></q-img>
       <span class="q-ml-md">Card details</span>
       <q-space></q-space>
       <q-img
-        :src="
-          isExpanded ? 'src/assets/up-arrow.svg' : 'src/assets/down-arrow.svg'
-        "
+        :src="isExpanded ? '~assets/up-arrow.svg' : '~assets/down-arrow.svg'"
         width="20px"
         class="card-details__expand-btn"
         @click="isExpanded = !isExpanded"

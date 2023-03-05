@@ -1,13 +1,11 @@
 <template>
   <q-card class="transaction-list" flat>
     <div class="row flex-center q-pa-lg">
-      <q-img src="src/assets/recent.svg" width="24px"></q-img>
+      <q-img src="~assets/recent.svg" width="24px"></q-img>
       <span class="q-ml-md">Recent transactions</span>
       <q-space></q-space>
       <q-img
-        :src="
-          isExpanded ? 'src/assets/up-arrow.svg' : 'src/assets/down-arrow.svg'
-        "
+        :src="isExpanded ? '~assets/up-arrow.svg' : '~assets/down-arrow.svg'"
         width="20px"
         class="transaction-list__expand-btn"
         @click="isExpanded = !isExpanded"
@@ -29,7 +27,7 @@
                 <div class="row q-mt-sm">
                   <q-avatar size="24px" class="bg-secondary">
                     <q-img
-                      src="src/assets/business-and-finance.svg"
+                      src="~assets/business-and-finance.svg"
                       width="10px"
                     ></q-img>
                   </q-avatar>
@@ -63,17 +61,17 @@ export interface Txn {
 const txns: Txn[] = [
   {
     id: 1,
-    img: 'src/assets/file-storage.svg',
+    img: '~assets/file-storage.svg',
     bg: '#009DFF1A',
   },
   {
     id: 2,
-    img: 'src/assets/flights.svg',
+    img: '~assets/flights.svg',
     bg: '#00D6B51A',
   },
   {
     id: 3,
-    img: 'src/assets/megaphone.svg',
+    img: '~assets/megaphone.svg',
     bg: '#F251951A',
   },
 ];

@@ -1,7 +1,7 @@
 <template>
   <q-card class="bg-primary q-pa-md text-white text-weight-bold card" flat>
     <div class="row reverse q-mb-md">
-      <q-img src="src/assets/debitcard.svg" width="83px" />
+      <q-img src="~assets/debitcard.svg" width="83px" />
     </div>
     <div class="row q-mb-md">
       <span class="text-capitalize card__name">Mark Henry - {{ card }}</span>
@@ -20,7 +20,7 @@
       <span>Thru: 12/20</span>
     </div>
     <div class="row reverse">
-      <q-img src="src/assets/visa.svg" width="83px" />
+      <q-img src="~assets/visa.svg" width="83px" />
     </div>
   </q-card>
 </template>

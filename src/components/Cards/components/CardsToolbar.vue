@@ -13,7 +13,7 @@
       class="text-capitalize toolbar__new-card"
       unelevated
     >
-      <q-img src="src/assets/box.svg" width="16px" class="q-mr-sm"></q-img>
+      <q-img src="~assets/box.svg" width="16px" class="q-mr-sm"></q-img>
       New card</q-btn
     >
   </div>

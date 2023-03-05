@@ -8,24 +8,24 @@ export const R_O_I = 0.006;
 export const drawerItems: DrawerItem[] = [
   {
     text: 'Home',
-    imgPath: 'src/assets/home.svg',
-    mobImgPath: 'src/assets/homemobile.svg',
+    imgPath: '~assets/home.svg',
+    mobImgPath: '~assets/homemobile.svg',
   },
   {
     text: 'Cards',
-    imgPath: 'src/assets/card.svg',
+    imgPath: '~assets/card.svg',
     link: '/cards',
-    mobImgPath: 'src/assets/card.svg',
+    mobImgPath: '~assets/card.svg',
   },
   {
     text: 'Payments',
-    imgPath: 'src/assets/payments.svg',
-    mobImgPath: 'src/assets/paymentsmobile.svg',
+    imgPath: '~assets/payments.svg',
+    mobImgPath: '~assets/paymentsmobile.svg',
   },
   {
     text: 'Loans',
-    imgPath: 'src/assets/credit.svg',
+    imgPath: '~assets/credit.svg',
     link: '/loans',
-    mobImgPath: 'src/assets/creditmobile.svg',
+    mobImgPath: '~assets/creditmobile.svg',
   },
 ];

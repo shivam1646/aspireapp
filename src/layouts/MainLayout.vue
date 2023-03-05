@@ -3,7 +3,7 @@
     <q-header class="main-layout__header">
       <q-toolbar class="lt-md">
         <q-space />
-        <q-img src="src/assets/logo-mobile.svg" width="25px" />
+        <q-img src="~assets/logo-mobile.svg" width="25px" />
       </q-toolbar>
       <div class="main-layout__header-content lt-md">
         <div v-if="route.meta.isCard">

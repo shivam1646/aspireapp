@@ -18,27 +18,27 @@ const actions: CardAction[] = [
   {
     id: 1,
     text: 'Freeze card',
-    img: 'src/assets/freezecard.svg',
+    img: '~assets/freezecard.svg',
   },
   {
     id: 2,
     text: 'Set spend limit',
-    img: 'src/assets/spendlimit.svg',
+    img: '~assets/spendlimit.svg',
   },
   {
     id: 3,
     text: 'Add to GPay',
-    img: 'src/assets/gpay.svg',
+    img: '~assets/gpay.svg',
   },
   {
     id: 4,
     text: 'Replace card',
-    img: 'src/assets/replacecard.svg',
+    img: '~assets/replacecard.svg',
   },
   {
     id: 5,
     text: 'Cancel card',
-    img: 'src/assets/deactivatecard.svg',
+    img: '~assets/deactivatecard.svg',
   },
 ];
 </script>
