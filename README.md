@@ -39,3 +39,9 @@ quasar build
 
 ### Customize the configuration
 See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+
+### Deployed here
+https://64050382f8795300087068f6--superb-kleicha-463e70.netlify.app/
+
+### Note
+Had to use static image path in code as there is some issue with image path recognition for Vite+Netlify
