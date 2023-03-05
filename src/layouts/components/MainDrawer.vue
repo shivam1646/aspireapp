@@ -5,15 +5,21 @@
       Trusted way of banking for 3,000+ SMEs and startups in Singapore
     </div>
     <q-list class="q-mt-xl">
-      <q-item
-        v-for="item in drawerItems"
-        :key="item.text"
-        clickable
-        :to="item.link"
-        class="q-my-lg no-padding"
-      >
-        <q-img :src="item.imgPath" width="24px" height="24px"></q-img>
-        <div class="text-white q-ml-sm">{{ item.text }}</div>
+      <q-item class="q-my-lg no-padding">
+        <q-img src="~assets/home.svg" width="24px" height="24px"></q-img>
+        <div class="text-white q-ml-sm">Home</div>
+      </q-item>
+      <q-item class="q-my-lg no-padding" to="/cards">
+        <q-img src="~assets/card.svg" width="24px" height="24px"></q-img>
+        <div class="text-white q-ml-sm">Cards</div>
+      </q-item>
+      <q-item class="q-my-lg no-padding">
+        <q-img src="~assets/payments.svg" width="24px" height="24px"></q-img>
+        <div class="text-white q-ml-sm">Payments</div>
+      </q-item>
+      <q-item class="q-my-lg no-padding" to="/loans">
+        <q-img src="~assets/credit.svg" width="24px" height="24px"></q-img>
+        <div class="text-white q-ml-sm">Loans</div>
       </q-item>
       <q-item class="q-my-lg no-padding" clickable @click="logout">
         <q-img src="~assets/account.svg" width="24px" height="24px"></q-img>
@@ -26,7 +32,7 @@
 <script setup lang="ts">
 import { useStore } from 'src/store';
 import { useRouter } from 'vue-router';
-import { drawerItems } from '../../constants';
+import { DrawerItem } from '../../types/drawer';
 
 const store = useStore();
 const router = useRouter();

@@ -5,10 +5,18 @@
       <span class="q-ml-md">Card details</span>
       <q-space></q-space>
       <q-img
-        :src="isExpanded ? '~assets/up-arrow.svg' : '~assets/down-arrow.svg'"
+        v-if="isExpanded"
+        src="~assets/up-arrow.svg"
         width="20px"
         class="card-details__expand-btn"
-        @click="isExpanded = !isExpanded"
+        @click="isExpanded = false"
+      ></q-img>
+      <q-img
+        v-else
+        src="~assets/down-arrow.svg"
+        width="20px"
+        class="card-details__expand-btn"
+        @click="isExpanded = true"
       ></q-img>
     </div>
     <q-slide-transition>

@@ -1,47 +1,27 @@
 <template>
   <q-card class="card-actions q-pa-md" flat>
-    <div v-for="action in actions" :key="action.id" class="card-actions__item">
-      <q-img :src="action.img" width="32px"></q-img>
-      <span>{{ action.text }}</span>
+    <div class="card-actions__item">
+      <q-img src="~assets/freezecard.svg" width="32px"></q-img>
+      <span>Freeze card</span>
+    </div>
+    <div class="card-actions__item">
+      <q-img src="~assets/spendlimit.svg" width="32px"></q-img>
+      <span>Set spend limit</span>
+    </div>
+    <div class="card-actions__item">
+      <q-img src="~assets/gpay.svg" width="32px"></q-img>
+      <span>Add to GPay</span>
+    </div>
+    <div class="card-actions__item">
+      <q-img src="~assets/replacecard.svg" width="32px"></q-img>
+      <span>Replace card</span>
+    </div>
+    <div class="card-actions__item">
+      <q-img src="~assets/deactivatecard.svg" width="32px"></q-img>
+      <span>Cancel card</span>
     </div>
   </q-card>
 </template>
-
-<script setup lang="ts">
-export interface CardAction {
-  id: number;
-  text: string;
-  img: string;
-}
-
-const actions: CardAction[] = [
-  {
-    id: 1,
-    text: 'Freeze card',
-    img: '~assets/freezecard.svg',
-  },
-  {
-    id: 2,
-    text: 'Set spend limit',
-    img: '~assets/spendlimit.svg',
-  },
-  {
-    id: 3,
-    text: 'Add to GPay',
-    img: '~assets/gpay.svg',
-  },
-  {
-    id: 4,
-    text: 'Replace card',
-    img: '~assets/replacecard.svg',
-  },
-  {
-    id: 5,
-    text: 'Cancel card',
-    img: '~assets/deactivatecard.svg',
-  },
-];
-</script>
 
 <style lang="scss">
 .card-actions {

@@ -21,14 +21,21 @@
     </q-header>
     <q-footer bordered class="bg-white text-black">
       <q-tabs class="lt-md" no-caps align="justify">
-        <q-route-tab
-          v-for="tab in drawerItems"
-          :name="tab.text"
-          :to="tab.link"
-          :key="tab.text"
-        >
-          <q-img :src="tab.mobImgPath" width="24px" height="24px"></q-img>
-          <span style="font-size: 12px; color: #dddddd">{{ tab.text }}</span>
+        <q-route-tab name="Home">
+          <q-img src="~assets/homemobile.svg" width="24px" height="24px" />
+          <span style="font-size: 12px; color: #dddddd">Home</span>
+        </q-route-tab>
+        <q-route-tab name="Cards" to="/cards">
+          <q-img src="~assets/card.svg" width="24px" height="24px" />
+          <span style="font-size: 12px; color: #dddddd">Cards</span>
+        </q-route-tab>
+        <q-route-tab name="Payments">
+          <q-img src="~assets/paymentsmobile.svg" width="24px" height="24px" />
+          <span style="font-size: 12px; color: #dddddd">Payments</span>
+        </q-route-tab>
+        <q-route-tab name="Loans" to="/loans">
+          <q-img src="~assets/creditmobile.svg" width="24px" height="24px" />
+          <span style="font-size: 12px; color: #dddddd">Loans</span>
         </q-route-tab>
       </q-tabs>
     </q-footer>
@@ -43,7 +50,6 @@
 
 <script setup lang="ts">
 import MainDrawer from './components/MainDrawer.vue';
-import { drawerItems } from 'src/constants';
 import CardsToolbar from 'src/components/Cards/components/CardsToolbar.vue';
 import CardTabs from 'src/components/Cards/components/CardTabs.vue';
 import CardCarousel from 'src/components/Cards/components/CardCarousel.vue';
