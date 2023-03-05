@@ -3,7 +3,7 @@
     <q-header class="login-layout__header">
       <q-toolbar class="lt-md">
         <q-space />
-        <q-img src="src/assets/logo-mobile.svg" width="25px" />
+        <q-img src="/assets/logo-mobile.svg" width="25px" />
       </q-toolbar>
       <div class="login-layout__header-content lt-md">
         <div class="q-mb-xs text-h4 text-weight-bolder">Aspire</div>
@@ -11,7 +11,7 @@
       </div>
     </q-header>
     <q-drawer :model-value="true" :width="340" class="app-drawer q-pa-xl">
-      <q-img src="src/assets/aspire_logo.svg" width="125px" />
+      <q-img src="/assets/aspire_logo.svg" width="125px" />
       <div class="text-white q-mt-sm drawer__subtitle">
         {{ route.meta.desc }}
       </div>
